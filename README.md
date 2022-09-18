@@ -17,6 +17,10 @@ follow the prompts to create db.json file
 `npm install -g json-server`
 `json-server --watch db.json`  
 
+## Enquirer Information
+
+<https://github.com/enquirer/enquirer>
+
 ## Todos
 
 - make prompts more dynamic to create file based off answers
