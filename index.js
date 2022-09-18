@@ -1,71 +1,77 @@
-const { faker } = require('@faker-js/faker');
-const { writeFile } = require('fs')
-const path = require('path')
-const { prompt } = require('enquirer');
+const { faker } = require("@faker-js/faker");
+const { writeFile } = require("fs");
+const path = require("path");
+const { prompt } = require("enquirer");
+
+const BIRDS = [];
+let dbPath = path.join(__dirname, './db.json')
+
+
+
+
 // https://github.com/enquirer/enquirer#select-prompt
 async function createFakerFile() {
-  let response = await prompt([{
-    type: 'input',
-    name: 'entity',
-    message: 'Name of Entity to create'
-  },
-  {
-    type: 'list',
-    name: 'types',
-    message: 'List of types separated by ,'
-  },
-  {
-    type: 'select',
-    name: 'value',
-    choices: ['faker.animal.cat', 'faker.company.catchPhraseDescriptor']
-  }
-])
+  let response = await prompt([
+    {
+      type: "input",
+      name: "entity",
+      message: "Name of Entity to create",
+    },
+    {
+      type: "list",
+      name: "types",
+      message: "List of types separated by ,",
+    },
+  ]);
 
-return response
+  return response;
+
+}
+
+async function getValues(types) {
+  let response = await prompt([
+    {
+      type: "select",
+      name: "value",
+      // todo: pull from faker web api
+      choices: ["faker.animal.cat", "faker.company.catchPhraseDescriptor"],
+    },
+  ]);
+
+  return response;
 }
 
 createFakerFile().then((res) => {
-  console.log(res)
-  console.log('hello world')
-})
 
+  let filename = res.entity
+  let types = res.types
 
-// if (result) {
-//   console.log(result.types);
-//   console.log(result.entity)
-//   let types = result.types.split(',')
-//   console.log(types[0])
-//   console.log(types[1])
+  console.log(res);
+  console.log("hello world");
 
-//   return;
-//   function createRandomEntity() {
-//     return {
-//       name: faker.animal.cat(),
-//       description: faker.company.catchPhraseDescriptor()
-//     };
-//   }
+  function createRandomBird(id) {
+    return {
+      id,
+      name: faker.animal.bird(),
+      description: faker.company.catchPhraseDescriptor(),
+    };
+  }
 
-//   Array.from({ length: 10 }).forEach(() => {
-//     ENTITIES.push(createRandomEntity());
-//   });
-  
-//   let domainsList = JSON.stringify(ENTITIES)
-//   // export array to file
-  
-//   writeFile(
-//     domainPath,
-//     domainsList,
-//     (error) => {
-//       if (error) {
-//         console.error('Error while update domains.json.')
-//         throw error
-//       } else {
-//         console.log('successfully wrote to file')
-//       }
-//     }
-//     )
-//   }
+  Array.from({ length: 10 }).forEach((item, index) => {
+    console.log(index);
+    BIRDS.push(createRandomBird(index));
+  });
 
+  // create string object 
+  let birdsList = "{\"birds\": " + JSON.stringify(BIRDS) + "}"
+  // save to json file named db.json
+  writeFile(dbPath, birdsList, (error) => {
+    if (error) {
+      console.error("Error while update domains.json.");
+      throw error;
+    } else {
+      console.log("successfully wrote to file");
+    }
+  });
+});
 
-
-//save to json file
