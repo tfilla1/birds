@@ -1,0 +1,22 @@
+{
+  "name": "birds",
+  "version": "1.0.0",
+  "description": "create fake data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "birds",
+    "are",
+    "not",
+    "real"
+  ],
+  "type": "commonjs",
+  "author": "tfilla",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "enquirer": "^2.3.6"
+  }
+}
