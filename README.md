@@ -10,6 +10,11 @@ an api serving fake data
 
 follow the prompts to create db.json file
 
+## JSON Server Information
+
+<https://github.com/typicode/json-server>
+
+`npm install -g json-server`
 `json-server --watch db.json`  
 
 ## Todos
