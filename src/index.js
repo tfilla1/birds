@@ -2,9 +2,9 @@ const { faker } = require("@faker-js/faker");
 const { writeFile } = require("fs");
 const path = require("path");
 const { prompt } = require("enquirer");
-let { fakerRoot } = require('./faker')
-let dbPath = path.join(__dirname, "./db.json");
-console.log(fakerRoot)
+let { getBirds, getBirdNames, getBirdTypes } = require('./birds')
+let dbPath = path.join(__dirname, "../lib/db.json");
+
 let statuses = [
   {
     id: 1,
@@ -27,8 +27,8 @@ let statuses = [
     description: "Audit",
   },
 ];
-
-async function createRandomDog() {
+let len = 0
+async function createRandomThing(name, description) {
   // requires node.latest 
   // install node.stable for work work
   // generate random GUID
@@ -36,76 +36,73 @@ async function createRandomDog() {
   let randStatusId = Math.floor(Math.random() * 4) + 1;
   return {
     id: randomUUID(),
-    name: faker.animal.dog(),
-    description: faker.commerce.productDescription(),
+    name: name,
+    description: description,
     status: statuses.find((s) => s.id == randStatusId),
   };
 }
-async function createInitialPrompt() {
-  let response = await prompt([
-    {
-      type: "input",
-      name: "entity",
-      message: "Name of Entity to create",
-    },
-    {
-      type: "list",
-      name: "types",
-      message: "List of types separated by ,",
-    },
-  ]);
 
-  return response;
-}
-
-// prompt([{
-//   type: "select",
-//   name: 'values',
-//   message: "choose the source for your values",
-//   choices: fakerRoot
-// }
-// ]).then((response) => {
-//   prompt([{
-//     type: "input",
-//     name: 'name',
-//     message: 'something'
-//   }])
-// })
-
-createInitialPrompt().then(async (res) => {
+// prompt to find:
+//    - the name of the entity
+//    - columns that will be needed
+//    - amount to create
+prompt([
+  {
+    type: "input",
+    name: "entity",
+    message: "Name of Entity to create",
+  },
+  {
+    type: "list",
+    name: "types",
+    message: "List of types separated by ,",
+  },
+  {
+    type: "input",
+    name: "amount",
+    message: "how many to create?"
+  }
+]).then(async (res) => {
   // create output file
+  var filename = res.entity
+  var len = res.amount
+  var things = []
   console.log(res);
   var types = res.types;
 
   // [ name, description, status]
 
-  let output = "{ '" + res.entity + "'"
+  let start = "{ '" + res.entity + "'"
 
   // { "entity": { "name": , "description": ,"status":}}
-  let typesResponse = await prompt([
+  await prompt([
     {
         type: "select",
-        name: 'values',
+        name: 'value',
         message: "choose the source for your values",
-        choices: fakerRoot
+        choices: getBirds()
       }
-  ]).then((response) => {
+  ]).then(async (response) => {
     console.log(response)
+    await prompt([
+      {
+          type: "select",
+          name: 'value',
+          message: "choose the source for your values",
+          choices: getBirdTypes(response.value)
+        }
+    ])
+    console.log(len)
+    for (var i = 0; i < len; i++) {
+      var thing = await createRandomThing()
+      things.push(thing);
+    }
+
   })
 
   let end = "}"
 })
 
-
-async function createFakers(len) {
-  let dogs = [];
-  for (var i = 0; i < len; i++) {
-    var dog = await createRandomDog()
-    dogs.push(dog);
-  }
-
-  return dogs;
-}
 
 async function createFakerFile() {
   let dogs = await createFakers(50);
