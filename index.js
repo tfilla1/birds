@@ -2,8 +2,9 @@ const { faker } = require("@faker-js/faker");
 const { writeFile } = require("fs");
 const path = require("path");
 const { prompt } = require("enquirer");
-let { getBirds, getBirdNames, getBirdTypes } = require('./birds')
-let dbPath = path.join(__dirname, "../lib/db.json");
+let { getBirds, getBirdNames, getBirdTypes } = require('./helpers/birds')
+let dbPath = path.join(__dirname, "./data/db.json");
+let testDBPath = path.join(__dirname, "./data/test-db.json");
 
 let statuses = [
   {
@@ -72,7 +73,7 @@ prompt([
 
   // [ name, description, status]
 
-  let start = "{ '" + res.entity + "'"
+  let start = "{ \"" + res.entity + "\" :"
 
   // { "entity": { "name": , "description": ,"status":}}
   await prompt([
@@ -83,7 +84,9 @@ prompt([
         choices: getBirds()
       }
   ]).then(async (response) => {
+    // animal, internet, color
     console.log(response)
+    let bird = response.value
     await prompt([
       {
           type: "select",
@@ -91,16 +94,30 @@ prompt([
           message: "choose the source for your values",
           choices: getBirdTypes(response.value)
         }
-    ])
-    console.log(len)
-    for (var i = 0; i < len; i++) {
-      var thing = await createRandomThing()
-      things.push(thing);
-    }
+    ]).then(async (response) => {
+      let birdType = response.value
+      console.log('this one:',bird, birdType)
+      console.log(faker[bird[birdType]]())
+      for (var i = 0; i < len; i++) {
+        var thing = await createRandomThing(faker[bird[birdType]]())
+        things.push(thing);
+      }
+    })
 
   })
 
   let end = "}"
+
+  let output = start + JSON.stringify(things) + end
+  // write file
+  writeFile(testDBPath, output, (error) => {
+    if (error) {
+      console.error("Error while update domains.json.");
+      throw error;
+    } else {
+      console.log("successfully wrote to file");
+    }
+  });
 })
 
 
@@ -124,9 +141,3 @@ async function createFakerFile() {
   });
 }
 
-//createFakerFile();
-// createFakerPrompt().then((res) => {
-//   let filename = res.entity;
-//   let types = res.types;
-
-// });
