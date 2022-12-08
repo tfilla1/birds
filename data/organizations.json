@@ -1,0 +1,504 @@
+{
+  "organizations": [
+    {
+      "id": "6f4a4f77-c29a-49e0-b137-7cb635abf66c",
+      "organizationName": "Okuneva, Bednar and Robel",
+      "employerActiveDate": "2019-11-19T21:25:00.915Z",
+      "employerInActiveDate": null,
+      "ein": "121444703",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "c4f5173c-cbed-4f60-9469-4898c9ef6ce5",
+      "organizationName": "Senger and Sons",
+      "employerActiveDate": "2022-06-04T03:16:47.122Z",
+      "employerInActiveDate": null,
+      "ein": "549119262",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "eb8468e2-0d72-4708-b6f0-6b6faf993e37",
+      "organizationName": "Fadel - Spencer",
+      "employerActiveDate": "2021-05-02T21:22:03.217Z",
+      "employerInActiveDate": null,
+      "ein": "996939767",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "4ba69c44-8d45-4b04-a23e-1c64df3bd5ee",
+      "organizationName": "Windler LLC",
+      "employerActiveDate": "2020-03-30T18:41:48.645Z",
+      "employerInActiveDate": null,
+      "ein": "302453364",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "3244e774-fd28-4592-855e-73545af21325",
+      "organizationName": "Batz - Kutch",
+      "employerActiveDate": "2021-05-25T11:54:13.310Z",
+      "employerInActiveDate": null,
+      "ein": "684671958",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "de7d15bc-9af3-471d-bb50-acb0b95a64bc",
+      "organizationName": "Fadel Group",
+      "employerActiveDate": "2021-12-23T12:59:55.838Z",
+      "employerInActiveDate": null,
+      "ein": "523270090",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "4df43222-eef3-472f-b281-977f480daf3b",
+      "organizationName": "Moen, Gibson and Powlowski",
+      "employerActiveDate": "2022-08-31T20:54:26.177Z",
+      "employerInActiveDate": null,
+      "ein": "606090320",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "35039d9e-6203-4098-be71-118d09162a04",
+      "organizationName": "Walter, Miller and Ferry",
+      "employerActiveDate": "2021-01-18T23:35:13.366Z",
+      "employerInActiveDate": null,
+      "ein": "582715893",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "105539d1-7c1b-420e-82e2-af9851a5aa4b",
+      "organizationName": "Will - Bednar",
+      "employerActiveDate": "2020-07-03T09:52:15.373Z",
+      "employerInActiveDate": null,
+      "ein": "328207374",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "65d57900-2ef4-45ea-9528-3d58e414fb54",
+      "organizationName": "Tremblay Group",
+      "employerActiveDate": "2019-10-31T22:16:26.670Z",
+      "employerInActiveDate": null,
+      "ein": "302679686",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "f50899da-b217-4f10-b30d-4ba32b7764b4",
+      "organizationName": "O'Keefe, Stoltenberg and Donnelly",
+      "employerActiveDate": "2021-10-07T11:09:19.648Z",
+      "employerInActiveDate": null,
+      "ein": "902826386",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "3db2bfa9-ce7a-4168-b903-90cf7946d106",
+      "organizationName": "Kunze, Satterfield and Hickle",
+      "employerActiveDate": "2021-10-08T19:57:54.065Z",
+      "employerInActiveDate": null,
+      "ein": "457570953",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "881cac20-1fbb-4262-a275-2ff14be432c8",
+      "organizationName": "Okuneva, Erdman and O'Kon",
+      "employerActiveDate": "2021-04-16T20:54:44.796Z",
+      "employerInActiveDate": null,
+      "ein": "666802579",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "f6d60ddb-af40-4d55-bd50-fb7d0d29f74f",
+      "organizationName": "Zieme - Harris",
+      "employerActiveDate": "2020-12-17T10:41:29.394Z",
+      "employerInActiveDate": null,
+      "ein": "229592816",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "c2bdfaa9-0db0-4b85-9506-7b81b27a0355",
+      "organizationName": "Wilkinson - Hauck",
+      "employerActiveDate": "2022-06-22T22:40:02.545Z",
+      "employerInActiveDate": null,
+      "ein": "207612369",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "2f8957e9-2791-45a4-8c2d-16d002051500",
+      "organizationName": "Strosin, Quigley and Pouros",
+      "employerActiveDate": "2021-04-14T19:45:44.837Z",
+      "employerInActiveDate": null,
+      "ein": "471264187",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "e12f5878-127f-4a5d-b0b6-4ce79472c0b7",
+      "organizationName": "Wyman - Feeney",
+      "employerActiveDate": "2020-04-23T15:03:48.314Z",
+      "employerInActiveDate": null,
+      "ein": "710354087",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "feae964c-b4e6-4c79-9130-f17f8261abee",
+      "organizationName": "Bruen, Ondricka and Crooks",
+      "employerActiveDate": "2020-02-25T17:00:21.034Z",
+      "employerInActiveDate": null,
+      "ein": "625179785",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "c25f1050-fb6f-4ab0-a699-957093addc30",
+      "organizationName": "D'Amore Group",
+      "employerActiveDate": "2021-11-05T10:23:23.253Z",
+      "employerInActiveDate": null,
+      "ein": "907727546",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "23c5b9b3-dc4b-439a-a707-a2d20a317036",
+      "organizationName": "Zulauf and Sons",
+      "employerActiveDate": "2021-06-21T18:12:19.352Z",
+      "employerInActiveDate": null,
+      "ein": "620237231",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "bec0eb93-4f66-4ae0-baa7-2f9c7d356907",
+      "organizationName": "Powlowski Inc",
+      "employerActiveDate": "2022-05-05T02:07:20.334Z",
+      "employerInActiveDate": null,
+      "ein": "126970177",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "091930c0-0ed0-462a-a772-b4222f6a3673",
+      "organizationName": "DuBuque - Kunze",
+      "employerActiveDate": "2020-10-06T05:04:51.292Z",
+      "employerInActiveDate": null,
+      "ein": "786117499",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "10b5ccbb-1414-488b-a19b-1e8590dcab59",
+      "organizationName": "Reynolds, Bogisich and Hudson",
+      "employerActiveDate": "2021-10-11T09:59:13.881Z",
+      "employerInActiveDate": null,
+      "ein": "783387056",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "d71dfd71-195d-4db5-aba8-909905e931ab",
+      "organizationName": "Bruen Group",
+      "employerActiveDate": "2021-03-22T20:44:15.249Z",
+      "employerInActiveDate": null,
+      "ein": "609035978",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "8b40ac24-745d-4e97-9576-cebacb348c35",
+      "organizationName": "Cummings, Hilpert and Okuneva",
+      "employerActiveDate": "2019-11-27T23:54:04.322Z",
+      "employerInActiveDate": null,
+      "ein": "319130655",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "1b410967-11fd-4d75-82df-0a4852888dda",
+      "organizationName": "Upton, Rippin and Hermann",
+      "employerActiveDate": "2021-04-01T19:56:09.958Z",
+      "employerInActiveDate": null,
+      "ein": "101690308",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "c87a4046-97cf-4d4c-98ef-adc16a70bd18",
+      "organizationName": "Breitenberg, Ryan and Zieme",
+      "employerActiveDate": "2019-10-11T16:06:34.794Z",
+      "employerInActiveDate": null,
+      "ein": "817192184",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "4e0d1038-4fc5-4a6c-9fd8-385ecc59f1be",
+      "organizationName": "Wilderman, Reichel and Keebler",
+      "employerActiveDate": "2022-01-22T23:07:24.271Z",
+      "employerInActiveDate": null,
+      "ein": "100460279",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "ef43b46d-634c-4252-97f1-479cd794cf90",
+      "organizationName": "Bednar, Collier and Dickinson",
+      "employerActiveDate": "2020-06-09T00:48:33.484Z",
+      "employerInActiveDate": null,
+      "ein": "211796348",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "05d50020-e64f-4a86-8c77-3be09933a3e2",
+      "organizationName": "Botsford - Cummerata",
+      "employerActiveDate": "2022-01-10T02:44:22.472Z",
+      "employerInActiveDate": null,
+      "ein": "807072207",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "c24dab1f-51e3-4445-b26d-718915a53bf2",
+      "organizationName": "Homenick, Willms and King",
+      "employerActiveDate": "2020-02-14T23:13:37.829Z",
+      "employerInActiveDate": null,
+      "ein": "187501784",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "620a66de-c442-49b1-93a5-a640396d74d5",
+      "organizationName": "Cartwright - Sporer",
+      "employerActiveDate": "2022-09-13T21:11:22.912Z",
+      "employerInActiveDate": null,
+      "ein": "890720444",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "64504413-3fde-4027-b6cf-ba17d3d64139",
+      "organizationName": "Borer and Sons",
+      "employerActiveDate": "2021-10-29T06:42:22.751Z",
+      "employerInActiveDate": null,
+      "ein": "937764144",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "dd840ee1-5746-443c-a2f3-56d9c74a8f01",
+      "organizationName": "Bergstrom, Aufderhar and Runolfsdottir",
+      "employerActiveDate": "2021-02-22T14:43:06.349Z",
+      "employerInActiveDate": null,
+      "ein": "862068775",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "44dc9842-5cec-4678-9f33-631e0ec3cdec",
+      "organizationName": "Grady, Maggio and Cummings",
+      "employerActiveDate": "2020-04-24T00:35:32.689Z",
+      "employerInActiveDate": null,
+      "ein": "790898586",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "bc3c4ffe-c652-48e3-af1b-419081a2a5aa",
+      "organizationName": "Yost - Hartmann",
+      "employerActiveDate": "2021-08-23T11:22:56.154Z",
+      "employerInActiveDate": null,
+      "ein": "890311583",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "ddac99f4-4647-4a64-bf5a-93139c24097e",
+      "organizationName": "Stroman and Sons",
+      "employerActiveDate": "2021-02-02T11:07:17.446Z",
+      "employerInActiveDate": null,
+      "ein": "950373333",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "6d07c55b-3e4b-45a3-b180-5367ef302572",
+      "organizationName": "Hamill - Ruecker",
+      "employerActiveDate": "2022-06-22T09:02:02.826Z",
+      "employerInActiveDate": null,
+      "ein": "360835078",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "5c97a5d5-30b7-4924-87d7-ed79d91d5363",
+      "organizationName": "Stehr - Effertz",
+      "employerActiveDate": "2021-01-07T09:52:10.452Z",
+      "employerInActiveDate": null,
+      "ein": "949557696",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "5419957d-62dc-4fbe-8ccc-cd391518f74b",
+      "organizationName": "Jones Group",
+      "employerActiveDate": "2022-01-17T01:47:45.585Z",
+      "employerInActiveDate": null,
+      "ein": "261678446",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "338763e1-32ab-4fb1-ae80-e462b74a9564",
+      "organizationName": "Herman, Zulauf and Sauer",
+      "employerActiveDate": "2022-09-07T12:33:44.503Z",
+      "employerInActiveDate": null,
+      "ein": "194334538",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "798d5d9d-349a-481f-a005-f681b0347575",
+      "organizationName": "Weber, Schaefer and Heathcote",
+      "employerActiveDate": "2021-06-06T02:56:25.500Z",
+      "employerInActiveDate": null,
+      "ein": "648107642",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "dca0006b-70ac-4dff-bdf6-eb01a4608d5a",
+      "organizationName": "Schmitt Group",
+      "employerActiveDate": "2019-12-30T21:13:53.907Z",
+      "employerInActiveDate": null,
+      "ein": "646823043",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "997d185b-526e-47c5-9315-1fb91f78ac6d",
+      "organizationName": "Ortiz Inc",
+      "employerActiveDate": "2019-12-17T15:11:47.468Z",
+      "employerInActiveDate": null,
+      "ein": "663531910",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "6729f85e-b392-4f53-8b44-3964f2f704eb",
+      "organizationName": "Franey - Harris",
+      "employerActiveDate": "2020-11-10T15:47:12.834Z",
+      "employerInActiveDate": null,
+      "ein": "212907230",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "36c52ecb-d5ed-4076-953e-3df12a920afb",
+      "organizationName": "Greenfelder, Dooley and Corkery",
+      "employerActiveDate": "2022-03-16T10:02:38.912Z",
+      "employerInActiveDate": null,
+      "ein": "618204146",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "075b056a-2956-4dcd-8754-a09aa9e7a8e0",
+      "organizationName": "Hamill, Jenkins and Gerhold",
+      "employerActiveDate": "2021-07-31T16:00:03.827Z",
+      "employerInActiveDate": null,
+      "ein": "884539974",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "390b2d0f-cc71-4685-bc8c-2fd2d490711c",
+      "organizationName": "Tromp and Sons",
+      "employerActiveDate": "2022-03-08T07:11:57.729Z",
+      "employerInActiveDate": null,
+      "ein": "451114457",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "01e6ecfb-e654-4c5e-977d-6083337a2db1",
+      "organizationName": "Runolfsdottir and Sons",
+      "employerActiveDate": "2021-06-30T23:04:06.959Z",
+      "employerInActiveDate": null,
+      "ein": "326910424",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    },
+    {
+      "id": "eda9fbcc-36a5-41d6-80da-47b2f2e02205",
+      "organizationName": "Kunze, Bradtke and Willms",
+      "employerActiveDate": "2022-03-04T13:58:36.831Z",
+      "employerInActiveDate": null,
+      "ein": "931532916",
+      "locations": [],
+      "contacts": [],
+      "tags": []
+    }
+  ]
+}
